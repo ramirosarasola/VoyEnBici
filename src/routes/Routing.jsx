@@ -6,6 +6,7 @@ import { Contact } from "../components/pages/contact/Contact";
 import { HowToInvolve } from "../components/pages/how-to-involve/HowToInvolve";
 import { Mision } from "../components/pages/mision/Mision";
 import { Layout } from "../layout/Layout";
+import { Home } from "../components/pages/home/Home";
 
 export const Routing = () => {
 	return (
@@ -14,11 +15,12 @@ export const Routing = () => {
 				<Routes>
 					{/* Layout */}
 					<Route path="/" element={<Layout />}>
-						<Route index element={<Navigate to="/mision" />} />
+						<Route index element={<Navigate to="/home" />} />
 					</Route>
 
 					{/* Pages */}
 					<Route path="/" element={<Layout />}>
+						<Route path="/home" element={<Home />} />
 						<Route path="/mision" element={<Mision />} />
 						<Route path="/como-puedo-involucrarme" element={<HowToInvolve />} />
 						<Route path="/logros" element={<Achievements />} />
