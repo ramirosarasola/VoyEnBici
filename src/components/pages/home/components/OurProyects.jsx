@@ -16,7 +16,7 @@ export const OurProyects = () => {
 					></Subtitle>
 				</div>
 
-				<div class="flex overflow-x-auto space-x-5 w-full">
+				<div className="flex overflow-x-auto space-x-5 w-full">
 					<div>
 						<img className="image" src="" alt="" />
 					</div>
