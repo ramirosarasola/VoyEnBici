@@ -36,22 +36,22 @@ export const OurProjects = () => {
 
 	return (
 		<>
-			<section class="bg-gray-200 py-10">
+			<section className="bg-gray-200 py-10">
 				<h1
 					id="proyectos"
-					class=" uppercase font-black text-center my-10 text-3xl lg:text-5xl"
+					className=" uppercase font-black text-center my-10 text-3xl lg:text-5xl"
 				>
 					proyectos
 				</h1>
 
 				<div
-					class="proyectos flex flex-wrap  justify-center gap-y-5  max-w-5xl mx-auto
+					className="proyectos flex flex-wrap  justify-center gap-y-5  max-w-5xl mx-auto
 				lg:justify-between lg:gap-x-0 lg:gap-y-0
 				"
 				>
 					{projects.map((project) => (
 						<Project
-							key={project.cliente} // Añade una key única para cada elemento
+							key={project.id} // Añade una key única para cada elemento  //* cambie 'cliente' por 'id'*/
 							titulo={project.titulo}
 							tipo={project.tipo}
 							img={project.img}
