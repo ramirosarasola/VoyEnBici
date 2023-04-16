@@ -1,12 +1,13 @@
 import React from "react";
-import { Button } from "../../atoms/button/Button";
-import { Title } from "../../atoms/title/Title";
+import { ContainerPage } from "../../atoms/container-card/ContainerPage";
+import { Form } from "./components/Form";
 
 export const Contact = () => {
 	return (
-		<div>
-			<Title title="Contacto" />
-			<Button title="Hacé tu donación" />
-		</div>
+		<ContainerPage>
+			{/* <Title title="Contacto" /> */}
+			{/* <Button title="Hacé tu donación" /> */}
+			<Form />
+		</ContainerPage>
 	);
 };

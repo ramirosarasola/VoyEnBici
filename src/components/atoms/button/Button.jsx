@@ -11,7 +11,7 @@ export const Button = ({ title, className, onClick }) => {
 				type="button"
 				style={mainColor}
 				onClick={onClick}
-				className={`w-[432px] py-[3px] text-white font-extralight font-semibold hover:bg-blue-800 hover:scale-105 duration-200 ${className}`}
+				className={`font-semibold w-[432px] py-[5px] mx-auto text-center  rounded-md bg-indigo-600  p-3 text-white  hover:bg-indigo-700 cursor-pointer transition-all ${className}`}
 			>
 				{title}
 			</button>

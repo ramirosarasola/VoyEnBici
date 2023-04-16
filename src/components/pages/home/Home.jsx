@@ -1,24 +1,20 @@
 import React from "react";
+import { homeContent } from "../../../constants";
 import { BlackLine } from "../../atoms/black-line/BlackLine";
-import { ContainerCard } from "../../atoms/container-card/ContainerCard";
-import { OurProyects } from "./components/OurProyects";
 import { Card } from "../../atoms/cards/Card";
-import { homeContent } from '../../../constants';
-
+import { ContainerCard } from "../../atoms/container-card/ContainerCard";
+import { OurProjects } from "./components/OurProjects";
 
 export const Home = () => {
-
 	return (
 		<>
 			<div>
 				<BlackLine />
 				<ContainerCard>
-					{homeContent.map((item, index) =>{
-						return (
-							<Card homeContent={item} key={index} />
-						)
+					{homeContent.map((item, index) => {
+						return <Card homeContent={item} key={index} />;
 					})}
-					<OurProyects />
+					<OurProjects />
 				</ContainerCard>
 			</div>
 		</>
