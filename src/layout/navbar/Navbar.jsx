@@ -33,7 +33,7 @@ export const Navbar = () => {
 				<img
 					src={logo}
 					alt="logo-voy-en-bici"
-					className="sm:w-[210px] w-[180px] pt-5 "
+					className="sm:w-[210px] w-[160px] pt-5 "
 				/>
 			</Link>
 			<ul
@@ -43,8 +43,18 @@ export const Navbar = () => {
 						: "absolute top-0 left-0 bg-[#1865AB] w-full h-[80vh] pt-20 z-10 flex flex-col"
 				} `}
 			>
-				{/* <Link to={"/"}>Inicio </Link> */}
-
+				<Link
+					to={"/home"}
+					onClick={() => {
+						mobile && setToggle(!toggle);
+					}}
+					className={`nav__link flex items-center p-3 ${
+						isActive(location.pathname, "home") ? "active" : ""
+					}`}
+				>
+					{" "}
+					Inicio{" "}
+				</Link>
 				<Link
 					to={"/contacto"}
 					onClick={() => {

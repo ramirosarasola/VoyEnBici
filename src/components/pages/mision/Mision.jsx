@@ -1,11 +1,13 @@
 import React from "react";
 import { ContainerPage } from "../../atoms/container-card/ContainerPage";
-import { Title } from "../../atoms/title/Title";
+import { CardMision } from "./components/CardMision";
+import { Values } from "./components/Values";
 
 export const Mision = () => {
 	return (
 		<ContainerPage>
-			<Title title="Misión" />
+			<CardMision />
+			<Values />
 		</ContainerPage>
 	);
 };

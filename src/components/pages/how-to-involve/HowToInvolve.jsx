@@ -1,11 +1,11 @@
 import React from "react";
 import { ContainerPage } from "../../atoms/container-card/ContainerPage";
-import { Title } from "../../atoms/title/Title";
+import { CardHowToInvolve } from "./components/CardHowToInvolve";
 
 export const HowToInvolve = () => {
 	return (
 		<ContainerPage>
-			<Title title="¿Como me puedo involucrar?" />
+			<CardHowToInvolve />
 		</ContainerPage>
 	);
 };
