@@ -10,7 +10,7 @@ export const Navbar = () => {
 
 	useEffect(() => {
 		const handleResize = () => {
-			window.innerWidth <= 1005 ? setMobile(true) : setMobile(false);
+			window.innerWidth <= 1005 ? setMobile(true) : setMobile(false), setToggle(false);
 		};
 
 		handleResize();
@@ -27,7 +27,7 @@ export const Navbar = () => {
 
 	return (
 		<nav
-			className={`flex justify-between items-center px-8 sm:px-16 border-b-[1px] border-black relative ${toggle}`}
+			className={`flex justify-between items-center px-8 sm:px-16 border-b-[1px] border-black relative h-[20vh]`}
 		>
 			<Link to={"/home"}>
 				<img
@@ -40,7 +40,7 @@ export const Navbar = () => {
 				className={`${
 					!toggle
 						? "hidden custom-md:flex justify-evenly gap-x-8 pt-5 w-full"
-						: "absolute top-0 left-0 bg-[#1865AB] w-full h-[80vh] pt-20 z-10 flex flex-col"
+						: "absolute top-[20vh] left-0 bg-[#1865AB] w-full h-[80vh] z-10 flex flex-col text-white"
 				} `}
 			>
 				<Link
