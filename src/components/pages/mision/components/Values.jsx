@@ -5,7 +5,7 @@ export const Values = () => {
 	return (
 		<>
 			<div
-				className="text-white p-16  py-10 lg:px-32"
+				className="text-white p-24  py-10 lg:px-32"
 				style={{ backgroundColor: "#1865AB" }}
 			>
 				<div className="pb-8">
