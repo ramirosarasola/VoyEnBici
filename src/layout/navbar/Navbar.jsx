@@ -39,7 +39,7 @@ export const Navbar = () => {
 			<ul
 				className={`${
 					!toggle
-						? "hidden custom-md:flex justify-evenly gap-x-8 pt-5 w-full"
+						? "hidden custom-md:flex justify-evenly gap-x-8 w-full"
 						: "absolute top-[15vh] left-0 bg-[#1865AB] w-full h-[85vh] z-10 flex flex-col text-white"
 				} `}
 			>
