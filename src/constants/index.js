@@ -17,10 +17,10 @@ const homeContent = [
         style: 'custom-md:order-1'
     },
     {
-        title: 'Reciclamos bicicletas donadas',
-        desc: 'A través de una economía circular, reciclamos y reparamos bicicletas de segunda mano, donadas por particulares para luego entregarlas a los colectivos sociales de bajos ingresos.',
+        title: 'Creamos los primeros Bancos de Bicicletas de Argentina y Latinoamérica.',
+        desc: 'Son lugares estratégicos dentro de comunidades, que sirven de refugio para las bicis recicladas y renovadas, dónde también se dan talleres de enseñanza de seguridad vial para los jóvenes. ',
         img: contact3,
-        style: ''
+        style: 'bg-[#D9D9D9] relative custom-md:left-[20%]'
     },
 ]
 
