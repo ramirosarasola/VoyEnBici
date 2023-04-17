@@ -27,7 +27,7 @@ export const Navbar = () => {
 
 	return (
 		<nav
-			className={`flex justify-between items-center px-8 sm:px-16 border-b-[1px] border-black relative h-[20vh]`}
+			className={`flex justify-between items-center px-8 sm:px-16 border-b-[1px] border-black relative h-[15vh]`}
 		>
 			<Link to={"/home"}>
 				<img
@@ -40,7 +40,7 @@ export const Navbar = () => {
 				className={`${
 					!toggle
 						? "hidden custom-md:flex justify-evenly gap-x-8 pt-5 w-full"
-						: "absolute top-[20vh] left-0 bg-[#1865AB] w-full h-[80vh] z-10 flex flex-col text-white"
+						: "absolute top-[15vh] left-0 bg-[#1865AB] w-full h-[85vh] z-10 flex flex-col text-white"
 				} `}
 			>
 				<Link
