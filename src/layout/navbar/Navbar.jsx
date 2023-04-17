@@ -33,7 +33,7 @@ export const Navbar = () => {
 				<img
 					src={logo}
 					alt="logo-voy-en-bici"
-					className="sm:w-[210px] w-[160px] pt-5 "
+					className="w-[160px] pt-5 "
 				/>
 			</Link>
 			<ul
