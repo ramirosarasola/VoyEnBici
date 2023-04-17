@@ -18,7 +18,7 @@ const Modal = ({ children, isOpen, closeModal }) => {
 					onClick={handleModalContainerClick}
 				>
 					<button className="modal-close" onClick={closeModal}>
-						X
+						❌
 					</button>
 					{children}
 				</div>

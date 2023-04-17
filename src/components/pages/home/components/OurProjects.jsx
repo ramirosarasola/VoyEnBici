@@ -38,7 +38,7 @@ export const OurProjects = () => {
 
 	return (
 		<>
-			<section class="bg-gray-200 py-5">
+			<section class="bg-gray-200 min-h-[100vh] h-full">
 				<div className="flex flex-col sm:flex-row sm:justify-evenly items-center gap-y-2 sm:gap-y-0 sm:py-5 pb-3">
 					<Title title="Nuestros proyectos / noticias" />
 					<Subtitle subtitle="Aca podriamos poner las cards que habia hecho uno de los chicos"></Subtitle>
