@@ -2,7 +2,7 @@ import React from "react";
 import { useModal } from "../../../atoms/modal/hooks/useModal";
 import Modal from "../../../atoms/modal/Modal";
 import { ModalProject } from "./ModalProject.jsx";
-export const Project = ({ titulo, img, cliente, tipo }) => {
+export const Project = ({ titulo, img, cliente, tipo, scrollUp }) => {
   const [isOpenModal1, openModal1, closeModal1] = useModal(false);
 
   const openModal = () => {
@@ -36,7 +36,10 @@ export const Project = ({ titulo, img, cliente, tipo }) => {
               id="buttonMercadoLibre"
               type="button"
               className=" my-2 inline-block py-2 w-full text-xs italic lg:text-sm bg-white text-slate-800 border border-slate-800 font-medium leading-tight uppercase  shadow-md hover:bg-black hover:text-white hover:shadow-lg focus:bg-slate-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-black active:text-white active:shadow-lg transition duration-150 ease-in-out"
-              onClick={openModal}
+              onClick={() =>{
+                openModal();
+                scrollUp();
+              }}
             >
               ver proyecto
             </button>
