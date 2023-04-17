@@ -1,4 +1,6 @@
 import { projects } from "../../../../constants/projects";
+import { Subtitle } from "../../../atoms/subtitle/Subtitle";
+import { Title } from "../../../atoms/title/Title";
 import "./OurProjects.css";
 import { Project } from "./Project.jsx";
 
@@ -36,14 +38,11 @@ export const OurProjects = () => {
 
 	return (
 		<>
-			<section class="bg-gray-200 py-10">
-				<h1
-					id="proyectos"
-					class=" uppercase font-black text-center my-10 text-3xl lg:text-5xl"
-				>
-					proyectos
-				</h1>
-
+			<section class="bg-gray-200 py-5">
+				<div className="flex flex-col sm:flex-row sm:justify-evenly items-center gap-y-2 sm:gap-y-0 sm:py-5 pb-3">
+					<Title title="Nuestros proyectos / noticias" />
+					<Subtitle subtitle="Aca podriamos poner las cards que habia hecho uno de los chicos"></Subtitle>
+				</div>
 				<div
 					class="proyectos flex flex-wrap  justify-center gap-y-5  max-w-5xl mx-auto
 				lg:justify-between lg:gap-x-0 lg:gap-y-0
