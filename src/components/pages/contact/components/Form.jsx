@@ -10,7 +10,7 @@ export const Form = () => {
   });
 
   const [loading, setLoading] = useState(false);
-  const [validation, setValidation] = useState(false);
+  // const [validation, setValidation] = useState(false);
 
   const validate = (e) => {
     const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
@@ -19,8 +19,6 @@ export const Form = () => {
       form.message.length > 3 && form.name.length > 3 ? true : false;
 
     return emailValidation && textValidation
-      ? setValidation(true)
-      : alert("Ingrese correctamente los datos.");
   };
 
   const handleChange = (e) => {
@@ -37,7 +35,7 @@ export const Form = () => {
     e.preventDefault();
     validate();
 
-    if (validation) {
+    if (validate()) {
       setLoading(true);
       emailjs
         .send(
@@ -47,7 +45,7 @@ export const Form = () => {
             from_name: form.name,
             to_name: "Ramiro Sarasola",
             from_email: form.email,
-            to_email: "ramiro.sarasola@gmail.com",
+            to_email: ["ramiro.sarasola@gmail.com"],
             message: form.message,
           },
           "SvwDBI_MBsyvGFvu9"
@@ -69,6 +67,8 @@ export const Form = () => {
             alert("Ahh, something went wrong. Please try again.");
           }
         );
+    } else {
+      alert("Ingrese los datos correctamente");
     }
   };
 
