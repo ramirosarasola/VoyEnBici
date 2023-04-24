@@ -123,7 +123,7 @@ export const Form = () => {
                 placeholder="Ingrese su nombre..."
                 value={form.name}
                 onChange={handleChange}
-                className="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md"
+                className="font-medium border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md"
               />
             </label>
           </div>
@@ -135,10 +135,10 @@ export const Form = () => {
                 id="email"
                 type="email"
                 name="email"
-                placeholder="Email propio..."
+                placeholder="Email..."
                 value={form.email}
                 onChange={handleChange}
-                className="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md"
+                className="font-medium border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md"
               />
             </label>
           </div>
@@ -150,7 +150,7 @@ export const Form = () => {
                 name="message"
                 id="message"
                 placeholder="Describe tu consulta..."
-                className="border border-opacity-60 w-full  p-2"
+                className="font-medium border border-opacity-60 w-full  p-2"
                 value={form.message}
                 onChange={handleChange}
               />
