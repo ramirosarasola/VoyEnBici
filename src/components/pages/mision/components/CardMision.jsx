@@ -10,14 +10,14 @@ export const CardMision = () => {
 				<div
 					className={`sm:px-16 px-6 py-5 gap-10 lg:gap-4 my-auto flex flex-col items-start 2xl:w-[80%] 2xl:m-auto   2xl:gap-10 $`}
 				>
-					<Title title="Misión" />
+					<Title title="Misión" className="text-[1.3rem] md:text-[1.4rem] lg:text-[1.7rem]" />
 
-					<h3 className="text-[1.2rem] ">
+					<h3 className="text-[1.1rem]">
 						Nuestro Objetivo reside en que miles de ciudadanos de bajos recursos
 						puedan acceder a un medio de locomoción útil, versátil y sustentable
 						como lo es la bicicleta.
 					</h3>
-					<p className=" text-[1.2rem]">
+					<p className=" text-[1.1rem]">
 						Ya sea por una cuestión de salud, social, medio ambiental o
 						económica, la bicicleta es una actividad muy beneficiosa y completa
 						para adquirir como hábito de vida. De esta manera,{" "}
@@ -48,16 +48,16 @@ export const CardMision = () => {
 				<div
 					className={`sm:px-16 px-6 py-5 gap-10 lg:gap-4 my-auto flex flex-col items-start 2xl:w-[80%] 2xl:m-auto   2xl:gap-10 $`}
 				>
-					<Title title="Visión" />
+					<Title title="Visión" className="text-[1.3rem] md:text-[1.4rem] lg:text-[1.7rem] "  />
 
-					<h3 className="text-[1.2rem] ">
+					<h3 className="text-[1.1rem] ">
 						Desde VOY EN BICI Argentina creemos firmemente que{" "}
 						<span className="font-bold">
 							las oportunidades laborales, las interacciones y la vida digna en
 							un territorio dependen del movimiento de las personas del lugar.
 						</span>
 					</h3>
-					<p className=" text-[1.2rem]">
+					<p className=" text-[1.1rem]">
 						La pandemia ha dañado la situación social y ha repercutido
 						seriamente en la movilidad de las personas. En VOY EN BICI Argentina
 						consideramos que sólo podemos mirar hacia adelante, sin dejar a
@@ -78,12 +78,12 @@ export const CardMision = () => {
 				<div
 					className={`sm:px-16 px-6 py-5 gap-10 lg:gap-4 my-auto flex flex-col items-start 2xl:w-[80%] 2xl:m-auto   2xl:gap-10 $`}
 				>
-					<Title title="Accion" />
+					<Title title="Accion" className="text-[1.3rem] md:text-[1.4rem] lg:text-[1.7rem] " />
 
-					<p className="text-[1.2rem]">
+					<p className="text-[1.1rem]">
 						Actualmente contamos con 3 modelos de acción:
 					</p>
-					<ul className="text-[1.2rem] flex flex-col">
+					<ul className="text-[1.1rem] flex flex-col">
 						<li>
 							<p>- Bancos de Bicicletas en barrios marginales.</p>
 						</li>
