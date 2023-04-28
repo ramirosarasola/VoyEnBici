@@ -2,3 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.img-gradient--left {
+    background: linear-gradient(90deg, #ffffff 10.04%, rgba(255, 255, 255) 80.59%, rgb(255, 255, 255) 67.1%, rgba(255, 255, 255, 0.1) 93.55%);
+}
+
+.img-gradient--right {
+    background: linear-gradient(-90deg, #ffffff 10.04%, rgba(255, 255, 255) 85.59%, rgb(255, 255, 255) 67.1%, rgba(255, 255, 255, 0.1) 99.55%);
+}

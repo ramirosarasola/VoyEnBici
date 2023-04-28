@@ -10,7 +10,7 @@ export const Footer = () => {
 			<footer className="p-5">
 				<ul
 					className="flex justify-center gap-x-5 items-center"
-					data-aos="fade-left"
+					// data-aos="fade-left"
 				>
 					<li>
 						<a
