@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import "../../App.css";
+// import "../../App.css";
 import { close, logo, menu } from "../../assets";
+import "./Navbar.css";
 
 export const Navbar = () => {
 	const [mobile, setMobile] = useState(false);
@@ -10,7 +11,8 @@ export const Navbar = () => {
 
 	useEffect(() => {
 		const handleResize = () => {
-			window.innerWidth <= 1005 ? setMobile(true) : setMobile(false), setToggle(false);
+			window.innerWidth <= 1005 ? setMobile(true) : setMobile(false),
+				setToggle(false);
 		};
 
 		handleResize();
@@ -25,23 +27,25 @@ export const Navbar = () => {
 		return path === keyword;
 	};
 
+	//! VIejo
 	// Styles
+	// const navLinkStyles =
+	// 	"flex text-white md:text-black items-center hover:pl-6 hover:border-slate-400 md:hover:px-3 md:hover:border-none pt-5 pl-4 md:pt-3 md:p-3 md:hover:bg-[#ebe7e7] duration-200 md:rounded-xl";
+
+	// const navLinkStylesActive =
+	// 	"border-b-4 md:border-b-0 md:bg-[#D9D9D9] active md:border-b-0 md:bg-[#D9D9D9] active";
+
+	//! Nuevo
 	const navLinkStyles =
-		"flex text-white md:text-black items-center hover:pl-6 hover:border-slate-400 md:hover:px-3 md:hover:border-none pt-5 pl-4 md:pt-3 md:p-3 md:hover:bg-[#ebe7e7] duration-200 md:rounded-xl";
+		"flex text-white  items-center hover:pl-6 hover:border-slate-400   pt-5 pl-4  duration-200 ";
 
-	const navLinkStylesActive =
-		"border-b-4 md:border-b-0 md:bg-[#D9D9D9] active md:border-b-0 md:bg-[#D9D9D9] active";
-
+	const navLinkStylesActive = "border-b-4";
 	return (
 		<nav
 			className={`flex justify-between items-center px-8 sm:px-16 border-b-[1px] border-black relative h-[15vh]`}
 		>
 			<Link to={"/home"}>
-				<img
-					src={logo}
-					alt="logo-voy-en-bici"
-					className="w-[160px]"
-				/>
+				<img src={logo} alt="logo-voy-en-bici" className="w-[160px]" />
 			</Link>
 			<ul
 				className={`${
