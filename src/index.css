@@ -2,7 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-.img-gradient--left {
+
+/* .img-gradient--left {
     background: linear-gradient(90deg, #ffffff 10.04%, rgba(255, 255, 255) 80.59%, rgb(255, 255, 255) 67.1%, rgba(255, 255, 255, 0.1) 93.55%);
 
 
@@ -10,4 +11,10 @@
 
   .img-gradient--right {
     background: linear-gradient(-90deg, #ffffff 10.04%, rgba(255, 255, 255) 85.59%, rgb(255, 255, 255) 67.1%, rgba(255, 255, 255, 0.1) 99.55%);
+  } */
+
+  .img-gradient {
+    background: linear-gradient(90deg, #f11f1f 48.04%, rgba(255, 255, 255, 0.9) 59.59%, rgba(255, 255, 255, 0.8) 67.1%, rgba(255, 255, 255, 0) 83.55%), url("./assets/contact-1.png") no-repeat center center fixed;
+    background-size: cover;
   }
+  

@@ -1,0 +1,9 @@
+.scroll__button{  
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: blue;
+  color: white;
+  border-radius: 50%;
+}
