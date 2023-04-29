@@ -10,7 +10,7 @@ export const Card = ({ homeContent }) => {
 				<h3 className="font-bold text-[1.2rem] md:text-[1.3rem] lg:text-[1.6rem]">
 					{homeContent.title}
 				</h3>
-				<p className=" lg:text-[1rem]">{homeContent.desc}</p>
+				<p className=" lg:text-[1.1rem]">{homeContent.desc}</p>
 
 				<Button title={"Hace un donación"} />
 			</div>

@@ -75,7 +75,7 @@ export const Form = () => {
   return (
     <div className="">
       <h2 className="font-black text-3xl text-center">Dona tu bicicleta </h2>
-      <p className="mt-10 text-lg mb-10 text-center">
+      <p className="mt-10  lg:text-[1.1rem] mb-10 text-center">
         Gracias a las donaciones el Banco de Bicicletas recibe semanalmente
         bicicletas usadas, antiguas y nuevas de diversos tamaños.
       </p>

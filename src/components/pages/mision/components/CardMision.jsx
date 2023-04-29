@@ -12,16 +12,16 @@ export const CardMision = () => {
 				>
 					<Title title="Misión" />
 
-					<h3 className="text-[1.2rem] ">
+					<h3 className=" lg:text-[1.1rem] ">
 						Nuestro Objetivo reside en que miles de ciudadanos de bajos recursos
 						puedan acceder a un medio de locomoción útil, versátil y sustentable
 						como lo es la bicicleta.
 					</h3>
-					<p className=" text-[1.2rem]">
+					<p className="  lg:text-[1.1rem]">
 						Ya sea por una cuestión de salud, social, medio ambiental o
 						económica, la bicicleta es una actividad muy beneficiosa y completa
 						para adquirir como hábito de vida. De esta manera,{" "}
-						<span className="font-bold">
+						<span className="font-bold  lg:text-[1.1rem]">
 							solucionamos la movilidad urbana de las personas más
 							desfavorecidas.
 						</span>
@@ -50,14 +50,14 @@ export const CardMision = () => {
 				>
 					<Title title="Visión" />
 
-					<h3 className="text-[1.2rem] ">
+					<h3 className=" lg:text-[1.1rem] ">
 						Desde VOY EN BICI Argentina creemos firmemente que{" "}
-						<span className="font-bold">
+						<span className="font-bold  lg:text-[1.1rem]">
 							las oportunidades laborales, las interacciones y la vida digna en
 							un territorio dependen del movimiento de las personas del lugar.
 						</span>
 					</h3>
-					<p className=" text-[1.2rem]">
+					<p className=" text-[1.2rem]  lg:text-[1.1rem]">
 						La pandemia ha dañado la situación social y ha repercutido
 						seriamente en la movilidad de las personas. En VOY EN BICI Argentina
 						consideramos que sólo podemos mirar hacia adelante, sin dejar a
@@ -80,10 +80,10 @@ export const CardMision = () => {
 				>
 					<Title title="Accion" />
 
-					<p className="text-[1.2rem]">
+					<p className=" lg:text-[1.1rem]">
 						Actualmente contamos con 3 modelos de acción:
 					</p>
-					<ul className="text-[1.2rem] flex flex-col">
+					<ul className=" lg:text-[1.1rem] flex flex-col">
 						<li>
 							<p>- Bancos de Bicicletas en barrios marginales.</p>
 						</li>
