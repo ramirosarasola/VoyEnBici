@@ -1,5 +1,5 @@
 import React from "react";
 
 export const BlackLine = () => {
-	return <p className="h-[1px] bg-black"></p>;
+	return <p className="h-[1px] bg-black max-w-full"></p>;
 };
