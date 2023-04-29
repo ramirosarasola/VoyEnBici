@@ -57,7 +57,7 @@ export const CardMision = () => {
 							un territorio dependen del movimiento de las personas del lugar.
 						</span>
 					</h3>
-					<p className=" text-[1.2rem]  lg:text-[1.1rem]">
+					<p className="lg:text-[1.1rem]">
 						La pandemia ha dañado la situación social y ha repercutido
 						seriamente en la movilidad de las personas. En VOY EN BICI Argentina
 						consideramos que sólo podemos mirar hacia adelante, sin dejar a
