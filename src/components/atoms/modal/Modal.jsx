@@ -26,7 +26,7 @@ const Modal = ({ children, isOpen, closeModal }) => {
 				onClick={() => { closeModal(); enableScroll()}}
 			>
 				<div
-					className="modal-container rounded-xl b"
+					className="modal-container rounded-xl"
 					onClick={handleModalContainerClick}
 				>
 					<button className="modal-close" onClick={() => { closeModal(); enableScroll()}}>
