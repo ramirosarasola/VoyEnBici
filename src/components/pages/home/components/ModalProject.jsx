@@ -6,7 +6,7 @@ export const ModalProject = ({ titulo, tipo, img, cliente }) => {
 		<>
 			{/* <!-- The Close Button --> */}
 			<button id="closeMercadoLibre" className="close ">
-				<p> &times; </p>
+				<p className="text-2xl"> X </p>
 			</button>
 
 			{/* <!-- Modal Content  --> */}
@@ -20,7 +20,8 @@ export const ModalProject = ({ titulo, tipo, img, cliente }) => {
 					</h3>
 					<img src={img} alt={titulo} />
 
-					<div className="flex flex-col space-y-4 pt-8  md:grid md:grid-cols-2 md:space-y-0 md:grid-y-4  ">
+					{/* <div className="flex flex-col space-y-4 pt-8  md:grid md:grid-cols-2 md:space-y-0 md:grid-y-4  "> */}
+					<div className="flex flex-col space-y-4 pt-8   ">
 						<p>Tipo de Proyecto: {tipo}</p>
 						<p>Beneficiado: {cliente}</p>
 					</div>
