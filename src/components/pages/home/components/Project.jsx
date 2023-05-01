@@ -46,10 +46,15 @@ export const Project = ({ titulo, img, cliente, tipo, scrollUp }) => {
 				</div>
 			</div>
 
-			{/* Modal que que mejor anda hasta ahora  */}
+			{/* Modal Reutilizable */}
 			<Modal isOpen={isOpenModal1} closeModal={closeModal1}>
-				<ModalProject />
+				<ModalProject titulo={titulo} tipo={tipo} img={img} cliente={cliente} />
 			</Modal>
+
+			{/* Modal que que mejor anda hasta ahora  */}
+			{/* <Modal isOpen={isOpenModal1} closeModal={closeModal1}>
+				<ModalProject />
+			</Modal> */}
 
 			{/* // Modal de prueba */}
 
