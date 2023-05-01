@@ -30,7 +30,7 @@ export const ModalProject = ({
 	<p>Beneficiado: {cliente}</p>
 	<div className="flex flex-col">
 		<p>¿Que hicimos?</p>
-		<p className="flex overflow-auto">{queHicimos}</p>
+		<p className="flex overflow-auto max-w-[500px]">{queHicimos}</p>
 	</div>
 	{link ? (
 		<button className=" my-2 inline-block py-2 w-full text-xs italic lg:text-sm bg-white text-slate-800 border border-slate-800 font-medium leading-tight uppercase  shadow-md hover:bg-slate-600 hover:text-white hover:shadow-lg focus:bg-slate-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-black active:text-white active:shadow-lg transition duration-150 ease-in-out">
