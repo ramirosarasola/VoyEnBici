@@ -8,7 +8,7 @@ import { OurProjects } from "./components/OurProjects";
 export const Home = () => {
 	return (
 		<>
-			<div>
+			<div className="">
 				<BlackLine />
 				<ContainerCard>
 					{homeContent.map((item, index) => {

@@ -23,7 +23,7 @@ export const Button = ({ title, className, onClick, botonColor }) => {
 				className={`font-semibold w-[280px] xl:w-[432px] py-[5px] hover:scale-105 duration-200 mx-auto text-center  rounded-md   p-3  cursor-pointer transition-all ${className} ${
 					botonColor
 						? botonColor
-						: "bg-indigo-600 text-white  hover:bg-indigo-700"
+						: "bg-[#1865AB] text-white  hover:bg-[#12518b]"
 				}`}
 			>
 				{title}

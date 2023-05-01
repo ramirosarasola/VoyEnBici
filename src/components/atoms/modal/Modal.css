@@ -25,6 +25,13 @@
   align-items: center;
 }
 
+/* @media (min-width: 760px) {
+  .modal-container {
+    width: 800px;
+    height: 700px;
+  }
+} */
+
 .modal-close {
   position: absolute;
   top: 1rem;

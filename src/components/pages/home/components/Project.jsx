@@ -1,7 +1,15 @@
 import { useModal } from "../../../atoms/modal/hooks/useModal";
 import Modal from "../../../atoms/modal/Modal";
 import { ModalProject } from "./ModalProject";
-export const Project = ({ titulo, img, cliente, tipo, scrollUp }) => {
+export const Project = ({
+	titulo,
+	img,
+	cliente,
+	tipo,
+	scrollUp,
+	queHicimos,
+	link,
+}) => {
 	const [isOpenModal1, openModal1, closeModal1] = useModal(false);
 
 	const openModal = () => {
@@ -48,7 +56,14 @@ export const Project = ({ titulo, img, cliente, tipo, scrollUp }) => {
 
 			{/* Modal Reutilizable */}
 			<Modal isOpen={isOpenModal1} closeModal={closeModal1}>
-				<ModalProject titulo={titulo} tipo={tipo} img={img} cliente={cliente} />
+				<ModalProject
+					titulo={titulo}
+					tipo={tipo}
+					img={img}
+					cliente={cliente}
+					queHicimos={queHicimos}
+					link={link}
+				/>
 			</Modal>
 
 			{/* Modal que que mejor anda hasta ahora  */}

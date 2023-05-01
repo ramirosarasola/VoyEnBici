@@ -3,7 +3,7 @@ import { Button } from "../button/Button";
 
 export const Card = ({ homeContent }) => {
 	return (
-		<div className="grid custom-md:grid-cols-2 lg:items-start relative">
+		<div className="grid custom-md:grid-cols-2 lg:items-start relative ">
 			<div
 				className={`sm:px-16 px-6 py-5 gap-10 lg:gap-4 my-auto flex flex-col items-start 2xl:w-[80%] 2xl:m-auto   2xl:gap-10 ${homeContent.style}`}
 			>
@@ -15,7 +15,7 @@ export const Card = ({ homeContent }) => {
 				<Button title={"Hace un donación"} />
 			</div>
 			<div className="">
-				<img className="w-full" src={homeContent.img} alt="" />
+				<img className="w-full object-cover" src={homeContent.img} alt="" />
 			</div>
 		</div>
 	);
