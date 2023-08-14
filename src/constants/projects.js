@@ -1,31 +1,31 @@
-import { contact1, contact2, contact3 } from "../assets";
+import { barrioMarginal, tallerEnCarcel, bancoBiciStgo, contact3 } from "../assets";
 
 export const projects = [
 	{
-		titulo: "Bicicletas Nuevas",
+		titulo: "BANCOS DE BICIS EN ESCUELAS RURALES",
 		tipo: "Reciclado",
-		img: contact1,
-		cliente: "Completar.",
+		img: bancoBiciStgo,
+		cliente: "Niñas, Niños y Adolescentes",
 		queHicimos:
-			"Aca contar lo que se hizo en el proyecto... https://www.facebook.com/people/Voyenbici/100069367055083/?paipv=0&eav=AfbEZtkWnBqhsjNVf439kTcltxPYJFo_fQdf-D1C68NjDLOgVQXkzh9YU_HmsyqnF0Y&_rdr",
+			"Aca contar lo que se hizo en el proyecto... ",
 		link: "https://www.facebook.com/people/Voyenbici/100069367055083/?paipv=0&eav=AfbEZtkWnBqhsjNVf439kTcltxPYJFo_fQdf-D1C68NjDLOgVQXkzh9YU_HmsyqnF0Y&_rdr",
 		id: 1,
 	},
 
 	{
-		titulo: "Taller Arreglado",
+		titulo: "BANCOS DE BICIS EN CÁRCELES",
 		tipo: "Taller",
-		img: contact2,
-		cliente: "Completar.",
+		img: tallerEnCarcel,
+		cliente: "Mujeres y Hombres privados de su libertad",
 		queHicimos: "Aca contar lo que se hizo en el proyecto...",
 		link: "https://www.facebook.com/people/Voyenbici/100069367055083/?paipv=0&eav=AfbEZtkWnBqhsjNVf439kTcltxPYJFo_fQdf-D1C68NjDLOgVQXkzh9YU_HmsyqnF0Y&_rdr",
 		id: 2,
 	},
 	{
-		titulo: "Taller Arreglado",
+		titulo: "BANCOS DE BICIS EN CENTROS COMUNITARIOS",
 		tipo: "Taller",
-		img: contact3,
-		cliente: "Completar.",
+		img: barrioMarginal,
+		cliente: "Niñas, Niños, Adolescentes y Adultos",
 		queHicimos: "Aca contar lo que se hizo en el proyecto...",
 		link: "https://www.facebook.com/people/Voyenbici/100069367055083/?paipv=0&eav=AfbEZtkWnBqhsjNVf439kTcltxPYJFo_fQdf-D1C68NjDLOgVQXkzh9YU_HmsyqnF0Y&_rdr",
 

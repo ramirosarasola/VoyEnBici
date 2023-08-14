@@ -18,7 +18,7 @@ export const OurProjects = () => {
 				ref={sectionRef}
 			>
 				<div className="flex flex-col sm:flex-row sm:justify-evenly items-center mb-3 sm:py-5 pb-3">
-					<Title title="Nuestros proyectos / noticias" />
+					<Title title="Nuestros proyectos" />
 				</div>
 				<div
 					className="proyectos flex flex-wrap  justify-center gap-y-5  max-w-5xl mx-auto

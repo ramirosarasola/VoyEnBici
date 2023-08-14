@@ -1,5 +1,6 @@
 import emailjs from "@emailjs/browser";
 import React, { useRef, useState } from "react";
+import { icono_bici } from "../../../../assets";
 
 export const Form = () => {
 	const formRef = useRef();
@@ -7,6 +8,8 @@ export const Form = () => {
 		name: "",
 		email: "",
 		message: "",
+		empresa: "",
+		phone:""
 	});
 
 	const [loading, setLoading] = useState(false);
@@ -43,10 +46,12 @@ export const Form = () => {
 					"template_fks5926",
 					{
 						from_name: form.name,
-						to_name: "Ramiro Sarasola",
+						to_name: "Voy en Bici",
 						from_email: form.email,
 						to_email: ["ramiro.sarasola@gmail.com"],
 						message: form.message,
+						phone: form.phone,
+						empresa: form.empresa,
 					},
 					"SvwDBI_MBsyvGFvu9"
 				)
@@ -58,6 +63,8 @@ export const Form = () => {
 							name: "",
 							email: "",
 							message: "",
+							phone: '',
+							empresa:'',
 						});
 					},
 					(error) => {
@@ -74,7 +81,7 @@ export const Form = () => {
 
 	return (
 		<div className="">
-			<h2 className="font-black text-3xl text-center">Dona tu bicicleta </h2>
+			<h2 className="font-black text-3xl text-center">QUEREMOS SABER MÁS DE VOS!</h2>
 			<p className="mt-10  lg:text-[1.1rem] mb-10 text-center">
 				Gracias a las donaciones el Banco de Bicicletas recibe semanalmente
 				bicicletas usadas, antiguas y nuevas de diversos tamaños.
@@ -82,31 +89,33 @@ export const Form = () => {
 
 			<div className="flex xl:justify-center">
 				<div className="px-5 w-full xl:w-2/3">
-					<p>Pasos para donar:</p>
+					<p>Si queres:</p>
 
 					<ul className="grid gap-y-5 p-5 ">
-						<li>
-							1 - Vamos a pedirte algunos datos para ponernos en contacto con
-							vos para coordinar la donacón.
+						<li className="flex items-center justify-start gap-4">
+							<img className="w-[50px]" src={icono_bici} alt="" />
+							<p>Sumar a una empresa como aliada!</p>
 						</li>
-
-						<li>
-							2 - Si podes sacale una foto a la bici. La foto de la bici nos da
-							una idea de cuánto dinero deberíamos poner para arreglar y renovar
-							la bici( costo por servicio general 8.000 pesos-10.000 pesos).
+						<li className="flex items-center justify-start gap-4">
+							<img className="w-[50px]" src={icono_bici} alt="" />
+							<p>Ayudarnos con una donacion monetaria!</p>
 						</li>
-
-						<li>
-							3 - Una vez que tenemos la ubicación de las bicicletas, la
-							buscamos por nuestra cuenta, luego las bicis son reparadas por
-							nuestro equipo de bicicleteros, para finalmente presentarlas al
-							Banco de Bicicletas, dónde se les dará utilidad compartida y
-							resguardo.
+						<li className="flex items-center justify-start gap-4">
+							<img className="w-[50px]" src={icono_bici} alt="" />
+							<p>Formar parte del voluntariado!</p>
+						</li>
+						<li className="flex items-center justify-start gap-4">
+							<img className="w-[50px]" src={icono_bici} alt="" />
+							<p>Donar una bicicleta!</p>
+						</li>
+						<li className="flex items-center justify-start gap-4">
+							<img className="w-[50px]" src={icono_bici} alt="" />
+							<p>Aportar insumos!</p>
 						</li>
 					</ul>
+					<p> Llena el formulario con tus datos y acerca tu consulta o propuesta. ¡Responderemos en breve!</p>
 				</div>
 			</div>
-
 			<div className="flex justify-center">
 				<form
 					ref={formRef}
@@ -114,8 +123,8 @@ export const Form = () => {
 					className="bg-white shadow-xl py-10 px-5 mb-10 rounded-lg mx-5  w-full xl:w-2/3"
 				>
 					<div className="mb-5">
-						<label className="block text-gray-700 font-bold uppercase">
-							Nombre
+						<label className="block text-gray-700 font-bold uppercase my-4">
+							Nombre y Apellido
 							<input
 								id="name"
 								type="text"
@@ -126,10 +135,7 @@ export const Form = () => {
 								className="font-medium border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md"
 							/>
 						</label>
-					</div>
-
-					<div className="mb-5">
-						<label className="block text-gray-700 font-bold uppercase">
+						<label className="block text-gray-700 font-bold uppercase my-4">
 							Email
 							<input
 								id="email"
@@ -141,10 +147,31 @@ export const Form = () => {
 								className="font-medium border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md"
 							/>
 						</label>
-					</div>
-
-					<div className="mb-5">
-						<label className="block text-gray-700 font-bold uppercase">
+						<label className="block text-gray-700 font-bold uppercase my-4">
+							Empresa
+							<input
+								id="empresa"
+								type="empresa"
+								name="empresa"
+								placeholder="Empresa..."
+								value={form.empresa}
+								onChange={handleChange}
+								className="font-medium border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md"
+							/>
+						</label>
+						<label className="block text-gray-700 font-bold uppercase my-4">
+							Celular
+							<input
+								id="phone"
+								type="phone"
+								name="phone"
+								placeholder="Celular..."
+								value={form.phone}
+								onChange={handleChange}
+								className="font-medium border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md"
+							/>
+						</label>
+						<label className="block text-gray-700 font-bold uppercase my-4">
 							Mensaje
 							<textarea
 								name="message"
@@ -162,7 +189,7 @@ export const Form = () => {
 							type="submit"
 							className="font-semibold w-[432px] py-[5px] mx-auto text-center  rounded-md bg-[#1865AB] hover:bg-[#12518b] p-3 text-white cursor-pointer transition-all"
 						>
-							{loading ? "Sending" : "Hace tu donación"}
+							{loading ? "Enviando mensaje..." : "Enviar Mensaje"}
 						</button>
 					</div>
 				</form>
