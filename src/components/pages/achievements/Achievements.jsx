@@ -9,8 +9,8 @@ export const Achievements = () => {
     <ContainerPage>
       <section className="achievements__container flex-col h-full p-5">
         <div className="flex-col justify-between  ">
-          <h1 className="text-[32px] text-center">Logros</h1>
-          <p className="max-w-[600px] m-auto text-justify mt-[20px]">
+          <h1 className="text-[40px] text-center">Logros</h1>
+          <p className="text-[22px] max-w-[700px] m-auto text-justify my-[20px]">
             Estos son algunos de los reconocimientos más destacados que ha
             conseguido VOY EN BICI a lo largo de su corta historia. Nos pone muy
             felices recibir estos premios y nos impulsa a seguir trabajando con
@@ -21,6 +21,7 @@ export const Achievements = () => {
           {achievements.map((item, i) => {
             return (
               <AchievementCard
+                ig_post={item.ig_post}
                 title={item.title}
                 description={item.description}
                 img={item.img}

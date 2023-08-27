@@ -29,6 +29,10 @@ import bancoBiciStgo from './proyectos/Banco-Bicis-Santiago.jpeg';
 import tallerEnCarcel from './proyectos/tallerEnCarcel.jpg';
 import barrioMarginal from './proyectos/barrio-marginal.jpeg';
 
+// Backgrounds
+import waveBg from './wave.svg';
+
+
 export { menu, close, logo, contact1, contact2, contact3, mision1, mision2, dona_1, dona_2,dona_2_1, icono_bici, home4 };
 export { logro1, logro2, logro3, logro3_1, logro4, logro5, logro6, logro6_1, logro7, logro8, logro9 }
-export {bancoBiciStgo, tallerEnCarcel, barrioMarginal}
+export { bancoBiciStgo, tallerEnCarcel, barrioMarginal, waveBg };
